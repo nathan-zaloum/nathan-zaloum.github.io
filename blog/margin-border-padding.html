@@ -46,7 +46,7 @@
     
   <body>
 
-    <button onclick="window.location.href='../index.html'" id="backToIndexButton" title="Back To Index">Index</button>
+    <button onclick="window.location.href='technical.html'" id="backToIndexButton" title="Back To Technical">Back</button>
     <button onclick="topFunction()" id="toTopButton" title="Go to top">Top</button>
 
     <div class="containerTitle">
@@ -54,7 +54,7 @@
     </div>
     <strong><em><h3 class>"What is the difference between Margin, Border, and Padding?"</h3></em></strong>
     <img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-2.png?width=650&name=Update%20css%20margin%20vs%20padding-2.png" class="center">
-    <p class="descriptionText">The margin is the space around an element's border, padding is the space between an element's border and it's content, and the border is what sits between the margin and padding. The border is ny default 0 px and so is not seen by default. The image above visualises this for you.</p>
+    <p class="mediumText">The margin is the space around an element's border, padding is the space between an element's border and it's content, and the border is what sits between the margin and padding. The border is ny default 0 px and so is not seen by default. The image above visualises this for you.</p>
     <div class="spacer"></div>
     <div class="subBox">
       <img src="https://www.hubspot.com/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png" class="smallImage">
@@ -62,7 +62,7 @@
       <p class="smallText">Margins will change the elements position on the page. When there are multiple elements margins determine the "whitespace" between them. </p>
     </div>
     <div class="subBox">
-      <img src="file:///C:/Users/bryden/OneDrive/Desktop/border.png" class="smallImage">
+      <img src="file:///C:/Users/bryden/Documents/GitHub/nathan-zaloum.github.io/border.png" class="smallImage">
       <p class="largeText">BORDERS </p>
       <p class="smallText">The border is the edge of the element and is 0px by default, which is why it is not seen initially. </p>
     </div>
@@ -74,12 +74,15 @@
 
     <script>
       var topButton = document.getElementById("toTopButton");
+      var indexButton = document.getElementById("backToIndexButton");
       window.onscroll = function() {scrollFunction()};
       function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
           topButton.style.display = "block";
+          indexButton.style.display = "none";
         } else {
           topButton.style.display = "none";
+          indexButton.style.display = "block";
         }
       }
       function topFunction() {
