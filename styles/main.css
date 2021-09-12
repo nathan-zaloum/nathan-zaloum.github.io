@@ -110,7 +110,7 @@ h3 {
     text-align: center;
     font-weight: 150;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(200, 200, 200);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -145,7 +145,18 @@ h3 {
     padding-right: 50px;
     font-weight: 150;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(200, 200, 200);
+  }
+
+  .mediumText {
+    text-align: center;
+    font-weight: 150;
+    font-size: 1.2rem;
+    color: rgb(200, 200, 200);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
   .largeText {
@@ -158,8 +169,26 @@ h3 {
     animation: pulsate 2s ease-in-out infinite alternate;
   }
 
+  .questionText {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.6rem;
+    color: rgb(0, 225, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
   .spacer {
     height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+  }
+
+  .spacerMini {
+    height: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 50%; 
