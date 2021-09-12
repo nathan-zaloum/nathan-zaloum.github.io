@@ -1,0 +1,107 @@
+  
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>My Learning Plan</title>
+    <style>
+      #toTopButton {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 225, 255);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      #toTopButton:hover {
+        background-color: #555;
+      }
+      #backToIndexButton {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 225, 255);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      #backToIndexButton:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+    
+  <body>
+
+    <button onclick="window.location.href='core.html'" id="backToIndexButton" title="Back To Core">Back</button>
+    <button onclick="topFunction()" id="toTopButton" title="Go to top">Top</button>
+
+    <div class="containerTitle">
+      <h1 class="neonText">Identity, Values, and Strengths</h1>
+    </div>
+    <div class="spacer"></div>
+    <p class="questionText">"Explain a situation where you have had an ethical decision to make.
+    Discuss how you weighed up the values involved in that decision, the decision you made and the consequences of the action you took."</p>
+    <p class="mediumText">I had a teacher that was not providing our class with what was expected of the course, and of a teacher.
+    While the majority of the class felt the same way, not many people were willing to address the issue directly with the teacher and other faculty.
+    I decided to take it upon myself to lead the discussions and as a result gained a less than favourable impression in the eyes of the teacher.
+    I believe they viewed me as an instigator and classes going forward were more awkward for me in particular.
+    I don't regret taking the lead though as the situation improved for the class as a whole and I feel it unnecessary to be liked by everyone in my life.</p>
+    <div class="spacerMini"></div>
+    <p class="questionText">"Describe how your culture has influenced your values and identity."</p>
+    <p class="mediumText">I'm pretty kiwi, through and through. I have a real "she'll be right" attitude and like to just let things happen naturally.
+    I do have distant roots in Lebanon (my last name is Lebanese) however, I have no real experience with the culture.
+    The most influence it has on my is having to explain the origins of my last name.</p>
+    <div class="spacerMini"></div>
+    <p class="questionText">"Evaluate your strengths and limitations in terms of your learning and career development."</p>
+    <p class="mediumText">I'm good with practical exercises but weak with theoretical lessons.
+    I am better with learning things I find fun and have a hard time focusing on things I don't find fun.<br>
+    In terms of my career, I have a broad skillset which makes freelancing a lot more flexible.
+    However, this also means it is quite the challenge to find specific work as my individual skills are lacking compared to the competition.</p>
+    <div class="spacerMini"></div>
+    <p class="questionText">"Identify which of your strengths might help you in your learning journey and how they might intersect with learning obstacles."</p>
+    <p class="mediumText">My focus on practical exercises makes learning practical skills very easy.
+    This also means that when it comes to things like expressing myself, like through these 'Core' blogs, I have a harder time.<br>
+    I can definitely see myself putting off these things and taking longer to do them than the practical exercises.</p>
+    <p class="questionText">"Share an example from your experience of where you were trying to work productively with others, but there was resistance or tension.
+    Discuss the strategies you used at that time, how effective they were, and your reflections on what other strategies you would try now, and why."</p>
+    <p class="mediumText">During a previous course we had to do a whole class project where we tried to make a VR game.
+    The biggest issue we came across was our distribution of skills. We didn't have a good balance of skillsets and instead had plenty of artists or plenty of coders.
+    This lead to a lack of progression in the overall project and we were left with a shell of a game and couldn't complete the project.<br>
+    If we were to do it again I would emphasise the allocation of tasks by importance and sit down and discuss with everyone what roles needed to be done rather than what roles everyone wanted to do.
+    Overall, I think the project failure was a result of treating it as a class exercise rather than treating it as a professional project with deadlines and other expectations.</p>
+
+    <script>
+      var topButton = document.getElementById("toTopButton");
+      var indexButton = document.getElementById("backToIndexButton");
+      window.onscroll = function() {scrollFunction()};
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topButton.style.display = "block";
+          indexButton.style.display = "none";
+        } else {
+          topButton.style.display = "none";
+          indexButton.style.display = "block";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+  </body>
+</html>
