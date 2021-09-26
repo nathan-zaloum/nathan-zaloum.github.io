@@ -96,3 +96,75 @@ body {
 .paragraph:hover {
     color: rgb(244, 244, 244);
 }
+
+.codeText {
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: monospace;
+    font-size: 15px;
+}
+#codeWhite {
+    color: white;
+}
+#codeGrey {
+    color: #D8D8D8;
+}
+#codeBlue {
+    color: #BED6FF;
+}
+#codeOrange {
+    color: #CE9178;
+}
+#codeDarkBlue {
+    color: #9CDCFE;
+}
+#codePurple {
+    color: #c586c0;
+}
+#codeGreen {
+    color: #b5ce89;
+}
+#codeDeepBlue {
+    color: #3f9ccb;
+}
+#codeYellow {
+    color: #dcdcaa;
+}
+
+.imageSquare {
+    float: left;
+    position: relative;
+    align-content: center;
+    top: 35px;
+    left: 50px;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.blogButton {
+    background: rgb(37, 39, 41);
+    position: relative;
+    text-align: left;
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    border: 1px solid rgb(42, 44, 46);
+    border-radius: 10px;
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+.blogButton:hover {
+    background: rgb(134, 143, 149);
+    cursor: pointer;
+}
+.blogButton:hover .blogLink {
+    color: rgb(37, 39, 41);
+}
+.blogLink {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: rgb(134, 143, 149);
+    padding-left: 50px;
+    padding-right: 50px;
+}
