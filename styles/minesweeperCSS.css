@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(18, 21, 24);
+    margin: auto;
+    display: block;
+}
+
+.menuButton {
+    background: rgb(37, 39, 41);
+    position: fixed;
+    align-content: center;
+    left: 20px;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgb(42, 44, 46);
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+.menuButton:hover {
+    background: rgb(244, 244, 244);
+    cursor: pointer;
+}
+.menuButton:hover .menuText {
+    color: rgb(42, 44, 46);
+}
+
+.content {
+    background: rgb(37, 39, 41);
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    border: 1px solid rgb(42, 44, 46);
+    border-radius: 10px;
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+
+.titleContainer {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleLetter {
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(244, 244, 244);
+    position: relative;
+    top: 0px;
+    transition: top 0.1s ease-in-out;
+}
+.titleLetter:hover {
+    top: -5px;
+    cursor: crosshair;
+}
+.titleLetter:hover#red {
+    color: rgb(229, 30, 38);
+}
+.titleLetter:hover#green {
+    color: rgb(0, 168, 79);
+}
+.titleLetter:hover#blue {
+    color: rgb(0, 153, 212);
+}
+.titleLetter:hover#yellow {
+    color: rgb(247, 209, 18);
+}
+
+.menuText {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(244, 244, 244);
+}
+.menuText:hover {
+    cursor: pointer;
+}
+
+.paragraph{
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Merriweather', serif;
+    color: rgb(134, 143, 149);
+    cursor: crosshair;
+}
+.paragraph:hover {
+    color: rgb(244, 244, 244);
+}
+
+.codeText {
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: monospace;
+    font-size: 15px;
+}
+#codeWhite {
+    color: white;
+}
+#codeGrey {
+    color: #D8D8D8;
+}
+#codeBlue {
+    color: #BED6FF;
+}
+#codeOrange {
+    color: #CE9178;
+}
+#codeDarkBlue {
+    color: #9CDCFE;
+}
+#codePurple {
+    color: #c586c0;
+}
+#codeGreen {
+    color: #b5ce89;
+}
+#codeDeepBlue {
+    color: #3f9ccb;
+}
+#codeYellow {
+    color: #dcdcaa;
+}
+
+.imageSquare {
+    float: left;
+    position: relative;
+    align-content: center;
+    top: 35px;
+    left: 50px;
+    max-width: 125px;
+    max-height: 125px;
+}
+
+.blogButton {
+    background: rgb(37, 39, 41);
+    position: relative;
+    text-align: left;
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    border: 1px solid rgb(42, 44, 46);
+    border-radius: 10px;
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+.blogButton:hover {
+    background: rgb(134, 143, 149);
+    cursor: pointer;
+}
+.blogButton:hover .blogLink {
+    color: rgb(37, 39, 41);
+}
+.blogLink {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: rgb(134, 143, 149);
+    padding-left: 50px;
+    padding-right: 50px;
+}
