@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../styles/newMain.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>Margin, Border, and Padding</title>
+    </head>
+    <body>
+      <a href="../home-page.html"><div class="menuButton">
+        <p class="menuText">HOME</p>
+      </div></a>
+      <a href="technical.html"><div class="menuButton" style="top: 90px;">
+        <p class="menuText">TECHNICAL</p>
+      </div></a>
+      <a href="core.html"><div class="menuButton" style="top: 160px;">
+        <p class="menuText">CORE</p>
+      </div></a>
+      <div class="content" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="titleContainer" style="margin-top: 35px;"> <!-- Title: Identity Values -->
+          <span id="red"    class="titleLetter">M</span>
+          <span id="green"  class="titleLetter">A</span>
+          <span id="blue"   class="titleLetter">R</span>
+          <span id="yellow" class="titleLetter">G</span>
+          <span id="red"    class="titleLetter">I</span>
+          <span id="green"  class="titleLetter">N</span>
+          <pre><span style="cursor: default;">     </span></pre>
+          <span id="blue"   class="titleLetter">B</span>
+          <span id="yellow" class="titleLetter">O</span>
+          <span id="red"    class="titleLetter">R</span>
+          <span id="green"  class="titleLetter">D</span>
+          <span id="blue"   class="titleLetter">E</span>
+          <span id="yellow" class="titleLetter">R</span>
+        </div>
+        <div class="titleContainer" style="margin-bottom: 30px;"> <!-- Title: Identity Values -->
+          <span id="red"    class="titleLetter">A</span>
+          <span id="green"  class="titleLetter">N</span>
+          <span id="blue"   class="titleLetter">D</span>
+          <pre><span style="cursor: default;">     </span></pre>
+          <span id="yellow" class="titleLetter">P</span>
+          <span id="red"    class="titleLetter">A</span>
+          <span id="green"  class="titleLetter">D</span>
+          <span id="blue"   class="titleLetter">D</span>
+          <span id="yellow" class="titleLetter">I</span>
+          <span id="red"    class="titleLetter">N</span>
+          <span id="green"  class="titleLetter">G</span>
+        </div>
+      </div>
+      <div class="content" style="margin-bottom: 20px;"> <!-- Content: Margins, Borders, and Padding -->
+        <div style="margin-top: 35px; margin-bottom: 35px;">
+          <p class="paragraph" style="margin-bottom: 30px;"><b><em>
+            "What is the difference between Margin, Border, and Padding?"
+          </em></b></p>
+          <p class="paragraph" style="margin-bottom: 30px;">
+            The margin is the space around an element's border, padding is the space between an element's border and it's content, and the border is what sits between the margin and padding. 
+            The border is by default 0 px and so is not seen by default.
+          </p>
+        </div>
+      </div>
+      <div class="content" style="margin-bottom: 20px;"> <!-- Content: Margins -->
+        <img src="https://www.hubspot.com/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-1.png" class="imageSquare">
+        <div style="margin-top: 35px; margin-bottom: 35px; margin-left: 175px;">
+          <p class="paragraph" style="margin-bottom: 30px;">
+            Margins will change the elements position on the page. 
+            When there are multiple elements margins determine the "whitespace" between them. 
+            Here is an example of code that changes the margin of an element in HTML:
+          </p>
+          <code><p class="codeText">
+            <span id="codeBlue">&lt</span>
+            <span id="codeDarkBlue">style </span>
+            <span id="codeGrey">=</span>
+            <span id="codeOrange">"margin-bottom: 10px;" </span>
+            <span id="codeBlue">/></span>
+          </p></code>
+        </div>
+      </div>
+      <div class="content" style="margin-bottom: 20px;"> <!-- Content: Borders -->
+        <img src="file:///C:/Users/bryden/Documents/GitHub/nathan-zaloum.github.io/border.png" class="imageSquare">
+        <div style="margin-top: 35px; margin-bottom: 50px; margin-left: 175px;">
+          <p class="paragraph" style="margin-bottom: 30px;">
+            The border is the edge of the element and is 0px by default, which is why it is not seen initially. 
+            Here is an example of code that changes the border of an element in HTML:
+          </p>
+          <code><p class="codeText">
+            <span id="codeBlue">&lt</span>
+            <span id="codeDarkBlue">style </span>
+            <span id="codeGrey">=</span>
+            <span id="codeOrange">"border: 2px;" </span>
+            <span id="codeBlue">/></span>
+          </p></code>
+        </div>
+      </div>
+      <div class="content" style="margin-bottom: 20px;"> <!-- Content: Padding -->
+        <img src="https://blog.hubspot.com/hs-fs/hubfs/Google%20Drive%20Integration/Update%20css%20margin%20vs%20padding-4.png?width=400&name=Update%20css%20margin%20vs%20padding-4.png" class="imageSquare">
+        <div style="margin-top: 35px; margin-bottom: 35px; margin-left: 175px;">
+          <p class="paragraph" style="margin-bottom: 30px;">
+            Padding is between the content and the border of the element. 
+            Fixed padding can force the content to enlarge as the element is enlarged. 
+            Here is an example of code that changes the padding of an element in HTML:
+          </p>
+          <code><p class="codeText">
+            <span id="codeBlue">&lt</span>
+            <span id="codeDarkBlue">style </span>
+            <span id="codeGrey">=</span>
+            <span id="codeOrange">"padding-left: 10px; padding-right: 10px;" </span>
+            <span id="codeBlue">/></span>
+          </p></code>
+          <code><p class="codeText">
+            <span id="codeBlue">&lt</span>
+            <span id="codeDarkBlue">style </span>
+            <span id="codeGrey">=</span>
+            <span id="codeOrange">"padding-top: 15px; padding-bottom: 15px;" </span>
+            <span id="codeBlue">/></span>
+          </p></code>
+        </div>
+      </div>
+      <div style="height: 10px;"></div>
+    </body>
+</html>
