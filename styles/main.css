@@ -1,229 +1,170 @@
-.neonText {
-    color: #fff;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px rgb(0, 225, 255),
-        0 0 82px rgb(0, 225, 255),
-        0 0 92px rgb(0, 225, 255),
-        0 0 102px rgb(0, 225, 255),
-        0 0 151px rgb(0, 225, 255);
-}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 html {
     height: 100%;
 }
 
 body {
-    padding-bottom: 20vh;
-    font-size: 18px;
-    font-family: "Vibur", sans-serif;
-    background: rgb(13,29,49);
-    background: linear-gradient(90deg, rgba(13,29,49,1) 0%, rgba(12,13,19,1) 35%, rgba(12,13,19,1) 50%, rgba(12,13,19,1) 65%, rgba(13,29,49,1) 100%);
-}
-
-h1 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 4.2rem;
-    animation: pulsate 1.5s ease-in-out infinite alternate;
-}
-
-h2 {
-    text-align: center;
-    font-weight: 200;
-    font-size: 2.0rem;
-    animation: pulsate 2s ease-in-out infinite alternate;
-}
-
-h3 {
-    text-align: center;
-    font-weight: 200;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.containerTitle {
-    margin-top: 20vh;
-}
-
-@keyframes pulsate {
-    100% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(0, 225, 255),
-        0 0 80px rgb(0, 225, 255),
-        0 0 90px rgb(0, 225, 255),
-        0 0 100px rgb(0, 225, 255),
-        0 0 150px rgb(0, 225, 255);
-    }
-    0% {
-        text-shadow:
-        0 0 4px #fff,
-        0 0 10px #fff,
-        0 0 18px #fff,
-        0 0 38px rgb(0, 225, 255),
-        0 0 73px rgb(0, 225, 255),
-        0 0 80px rgb(0, 225, 255),
-        0 0 94px rgb(0, 225, 255),
-        0 0 140px rgb(0, 225, 255);
-    }
-}
-
-.box-wrap {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:10%;
-}
-
-.box {
-    min-height: 300px;
-    padding:10px;
-    margin:2%;
-    background:rgba(255, 255, 255, 0);
-    width:30%;
-    border:5px solid #d6d6d6;
-    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25);
-    border-radius:10px;
-    transition:.2s all;
-  }
-
-  .box-wrap:hover .box {
-    filter:blur(3px);
-    opacity:.5;
-    transform: scale(.98);
-    box-shadow:none;
-  }
-
-  .box-wrap:hover .box:hover {
-    transform:scale(1);
-    filter:blur(0px);
-    opacity:1;
-    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
-  }
-
-  .descriptionText {
-    text-align: center;
-    font-weight: 150;
-    font-size: 1.2rem;
-    color: rgb(200, 200, 200);
+    background: rgb(18, 21, 24);
+    margin: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
+}
 
-  .center {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .subBox {
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  code {
-    font-family: monospace;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background: #1e1e1e;
+.menuButton {
+    background: rgb(37, 39, 41);
+    position: fixed;
+    align-content: center;
+    left: 20px;
+    width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 50px;
     border-radius: 10px;
-  }
+    border-bottom: 1px solid rgb(42, 44, 46);
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+.menuButton:hover {
+    background: rgb(244, 244, 244);
+    cursor: pointer;
+}
+.menuButton:hover .menuText {
+    color: rgb(42, 44, 46);
+}
 
-  .codeWhite {
+.content {
+    background: rgb(37, 39, 41);
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    border: 1px solid rgb(42, 44, 46);
+    border-radius: 10px;
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+
+.titleContainer {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titleLetter {
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(244, 244, 244);
+    position: relative;
+    top: 0px;
+    transition: top 0.1s ease-in-out;
+}
+.titleLetter:hover {
+    top: -5px;
+    cursor: crosshair;
+}
+.titleLetter:hover#red {
+    color: rgb(229, 30, 38);
+}
+.titleLetter:hover#green {
+    color: rgb(0, 168, 79);
+}
+.titleLetter:hover#blue {
+    color: rgb(0, 153, 212);
+}
+.titleLetter:hover#yellow {
+    color: rgb(247, 209, 18);
+}
+
+.menuText {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(244, 244, 244);
+}
+.menuText:hover {
+    cursor: pointer;
+}
+
+.paragraph{
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Merriweather', serif;
+    color: rgb(134, 143, 149);
+    cursor: crosshair;
+}
+.paragraph:hover {
+    color: rgb(244, 244, 244);
+}
+
+.codeText {
+    display: block;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: monospace;
+    font-size: 15px;
+}
+#codeWhite {
     color: white;
-  }
-  
-  .codeGrey {
+}
+#codeGrey {
     color: #D8D8D8;
-  }
-
-  .codeBlue {
+}
+#codeBlue {
     color: #BED6FF;
-  }
-
-  .codeOrange {
+}
+#codeOrange {
     color: #CE9178;
-  }
-
-  .codeDarkBlue {
+}
+#codeDarkBlue {
     color: #9CDCFE;
-  }
+}
+#codePurple {
+    color: #c586c0;
+}
+#codeGreen {
+    color: #b5ce89;
+}
+#codeDeepBlue {
+    color: #3f9ccb;
+}
+#codeYellow {
+    color: #dcdcaa;
+}
 
-  .smallImage {
+.imageSquare {
     float: left;
-    max-width: 100%;
-    max-height: 100%;
-  }
+    position: relative;
+    align-content: center;
+    top: 35px;
+    left: 50px;
+    max-width: 125px;
+    max-height: 125px;
+}
 
-  .smallText {
-    display: block;
-    padding-left: 300px;
+.blogButton {
+    background: rgb(37, 39, 41);
+    position: relative;
+    text-align: left;
+    margin: auto;
+    max-width: 800px;
+    width: 80%;
+    border: 1px solid rgb(42, 44, 46);
+    border-radius: 10px;
+    box-shadow:0 10px 12px 0px rgba(0,0,0,0.25);
+}
+.blogButton:hover {
+    background: rgb(134, 143, 149);
+    cursor: pointer;
+}
+.blogButton:hover .blogLink {
+    color: rgb(37, 39, 41);
+}
+.blogLink {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    color: rgb(134, 143, 149);
+    padding-left: 50px;
     padding-right: 50px;
-    font-weight: 150;
-    font-size: 1.2rem;
-    color: rgb(200, 200, 200);
-  }
-
-  .mediumText {
-    text-align: center;
-    font-weight: 150;
-    font-size: 1.2rem;
-    color: rgb(200, 200, 200);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .largeText {
-    display: block;
-    padding-left: 300px;
-    padding-right: 50px;
-    font-weight: 200;
-    font-size: 1.8rem;
-    color: white;
-    animation: pulsate 2s ease-in-out infinite alternate;
-  }
-
-  .questionText {
-    text-align: center;
-    font-weight: 200;
-    font-size: 1.6rem;
-    color: rgb(0, 225, 255);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .spacer {
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; 
-  }
-
-  .spacerMini {
-    height: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; 
-  }
+}
